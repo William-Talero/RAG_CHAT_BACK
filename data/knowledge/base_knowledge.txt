@@ -1,0 +1,46 @@
+¿Qué es este proyecto?
+Este es un proyecto base para crear chatbots utilizando tecnología RAG (Retrieval-Augmented Generation) con LangChain y NestJS. Permite crear asistentes virtuales que pueden responder preguntas basándose en una base de conocimientos específica.
+
+Características principales:
+- Arquitectura modular y escalable con NestJS
+- Búsqueda semántica utilizando embeddings
+- Integración con OpenAI para generación de respuestas
+- Soporte para múltiples formatos de documentos (texto y PDF)
+- Base de datos vectorial con Pinecone
+- API REST completa con documentación Swagger
+- Validación de datos con class-validator
+- Clean Architecture siguiendo principios SOLID
+
+¿Cómo funciona?
+El sistema funciona en tres pasos principales:
+1. **Indexación**: Los documentos se procesan y convierten en vectores usando embeddings
+2. **Búsqueda**: Cuando el usuario hace una pregunta, se buscan los documentos más relevantes
+3. **Generación**: Se utiliza la información encontrada como contexto para generar una respuesta coherente
+
+Tecnologías utilizadas:
+- **Framework**: NestJS para la estructura del backend
+- **IA**: LangChain para orquestación de LLM y OpenAI para embeddings y generación
+- **Base de datos**: Pinecone para almacenamiento vectorial
+- **Validación**: class-validator y class-transformer
+- **Documentación**: Swagger/OpenAPI
+- **Procesamiento**: Soporte nativo para PDF y texto plano
+
+Casos de uso:
+- Chatbots de atención al cliente
+- Asistentes de documentación técnica
+- Sistemas de FAQ inteligentes
+- Búsqueda semántica en bases de conocimiento
+- Asistentes virtuales especializados
+
+Ventajas del sistema:
+- Respuestas contextualmente relevantes
+- Escalabilidad horizontal
+- Fácil integración con diferentes fuentes de datos
+- Arquitectura modular que permite extensiones
+- API estándar para fácil integración
+- Configuración flexible y personalizable
+
+**Creador**: William Talero
+**GitHub**: https://github.com/William-Talero
+
+Este proyecto sirve como base sólida para construir cualquier tipo de chatbot o asistente virtual que necesite acceso a información específica y contextualizada.
